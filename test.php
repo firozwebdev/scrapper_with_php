@@ -2,7 +2,7 @@
 //include "simple_html_dom.php";
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://elements.envato.com/");
+curl_setopt($ch, CURLOPT_URL, "https://elements.envato.com/'");
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
 curl_exec($ch);

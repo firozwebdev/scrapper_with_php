@@ -12,15 +12,12 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
-      <path value="$PROJECT_DIR$/seleniumwithcurl/vendor/composer" />
-      <path value="$PROJECT_DIR$/seleniumwithcurl/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/seleniumwithcurl/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/seleniumwithcurl/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/seleniumwithcurl/vendor/php-webdriver/webdriver" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
     </include_path>
-  </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
-    <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
