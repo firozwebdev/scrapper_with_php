@@ -27,6 +27,6 @@ $result = curl_exec($ch);
 if (curl_errno($ch)) {
     echo 'Error:' . curl_error($ch);
 }else{
-    echo "it works";
+    echo "it works" ;
 }
 curl_close($ch);
