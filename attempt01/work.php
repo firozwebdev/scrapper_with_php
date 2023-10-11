@@ -11,16 +11,19 @@ if (isset($_POST["download"])) {
     } else if (!filter_var($_POST["url"], FILTER_VALIDATE_URL)) {
         $error = '<p class="text-danger"><b>Invalid URL</b></p>';
     } else {
+
         $url = $_POST["url"];
         $start = curl_init();
+        curl_setopt($start, CURLOPT_HEADER, 0);
         curl_setopt($start, CURLOPT_URL, $url);
         curl_setopt($start, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($start, CURLOPT_SSLVERSION, 3);
         $file_data = curl_exec($start);
         curl_close($start);
         $file_path = 'download/' . uniqid() . '.jpg';
-        $file = fopen($file_path, 'w+');
-        fputs($file, $file_data);
+        $file = fopen($file_path, 'x+');
+        fwrite($file,$file_data);
+        //fputs($file, $file_data);
         fclose($file);
         $image = '<img src="' . $file_path . '" class="img-thumbnail" width="250" />';
     }
